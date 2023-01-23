@@ -1,0 +1,18 @@
+Original code:
++It works
++tests pass
++the remote is universal, may control different types of devices
++we can have multiple remotes for an instance of a TV, for example
+
+-Remote has tight coupling to different classes
+-Remote is not extensible to adding new devices
+-too many changes to accommodate new devices controlled by a remote
+
+We are not using DIP
+
+Solutions:
+-create an interface RemoteControlled that TV, Fan, etc. implement
+-make the Remote as an interface
+
+Keep in mind, design is full of trade offs. There is no right and wrong. There are only better or worse.
+

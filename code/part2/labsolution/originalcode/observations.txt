@@ -1,0 +1,18 @@
+Make Remote an interface
+
++It works
++tests pass
++the remote is universal, may control different types of devices
++we can have multiple remotes for an instance of a TV, for example
++Remote is ultimately extensible since it is an interface
++we do not implement any interface at the TV level.
++there is no issue of method collision
++the implementation of Remote inside TV can access the TV's internals directly for better efficiency, etc.
+
+-we have to make the Remote for TV an inner class - need access to TV. But, we may also write it as a sparate class, in which case we will have to use the public methods of TV instead of directly accessing the internals
+
+Which seems to be better: solution 1 or solution 2?
+Solution 2 seems to be better overall
+
+Which solution is more common: solution 1 or solution 2?
+solution 1 (or is it? :)

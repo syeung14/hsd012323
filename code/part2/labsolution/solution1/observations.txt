@@ -1,0 +1,13 @@
+Solution 1:
++It works
++tests pass
++the remote is universal, may control different types of devices
++we can have multiple remotes for an instance of a TV, for example
++Remote has loosely coupling to different classes
++Remote is extensible to adding new devices that implement RemoteControlled
++We are using DIP
+
+-we need access to TV, Fan, etc.
+-we polluted the TV, Fan, etc. with methods needed only for a remote
+-If we implement other interfaces, we may run into method collision. For example, what if another interface also a up method?
+
