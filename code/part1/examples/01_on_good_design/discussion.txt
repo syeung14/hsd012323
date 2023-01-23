@@ -1,0 +1,36 @@
+What is design?
+
+It's a mapping of the requirements to the underlying languages,
+libraries, frameworks, etc. to solve the given problem.
+
+What is a good design?
+-is relevant
+-easy to change and maintain
+-is extensible
+-is understandable
+-is modular
+-is reversible?
+-is simple
+-is cost effective
+-high cohesion
+-low coupling
+-*testable
+-minimizes the frequency and impact of change
+-robust and resilient
+-...
+
+Economic impact of our design decisions
+
+A good design is not the one that correctly predicts the future, but
+the one that makes the changing to accommodate the needs in the
+future more affordable.
+
+Code is like people on a crowded train
+
+Minimalism is a key criteria for a good design
+
+
+
+
+
+
