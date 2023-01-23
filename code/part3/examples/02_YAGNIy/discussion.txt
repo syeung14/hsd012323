@@ -1,0 +1,18 @@
+YAGNIy
+
+You Aren't Gonna Need It (yet)
+
+It it can be postponed to a later time, then postpone decisions
+until we have more information to make better decisions.
+
+Last responsible moment
+
+Avoid any work that is not really needed or necessary.
+
+Don't write more code with extensibility in mind when it is not
+the right set of features to anticipate.
+
+Relevance and necessity should rule our decisions, not technology
+features, perceived extensibility, or infatuation.
+
+
