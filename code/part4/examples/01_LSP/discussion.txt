@@ -1,0 +1,107 @@
+Inheritance is where we have a base class and a
+derived class.
+
+Delegation is where an object directs part of its 
+responsibilities to another instance.
+
+Delegation is a general term and may be implemented
+using assocation, aggregation, or composition.
+assocation is where two object of equal status are related to each other
+aggregation is where an object owns another object
+composition is a form of aggregation where the lifetime of the objects are one and the same.
+
+
+composition is stronger form of aggregation
+aggregation is stronger form of association
+
+Delegation is very general and may be implemented using
+assocation, aggregation, or composition.
+
+Should we use inheritance of delegation?
+
+If an object of B wants to use an object of A, then use delegation.
+
+If an object of B may be used where an object of A is expected, then use inheritance.
+
+to use vs. to be used as
+delegation  vs. inheritance
+
+Use delegation for reuse.
+Use inheritance for substitutability
+
+Liskov's Substitution Principle (LSP)
+Barbara Liskov says: A method of a derived class should
+require no more and promise no less than the corresponding methods of the base class.
+
+The user of a base class should be able to use an instanceof a derived class without ever knowning the difference.
+
+
+If we have a vehicle where it has the following methods:
+drive
+fillGas
+checkGasLevel
+
+If I design a Car to have 
+drive
+fillGas
+checkGasLevel
+
+where it can tell how much gas there is and allow for filling.
+
+We can say Car is substituable for Vehicle.
+
+A car instance may be used where a Vehicle is expected.
+
+Suppose we have an Erase.
+
+
+Eraser has erase method.
+
+Suppose we create a GreenEraser, which has erase method.
+It does a better job environmentally.
+
+Question, can GreenEraser inherit from Eraser?
+
+Answer: Will a user of Eraser want to use a GreenEraser
+without knowning the difference.
+
+If yes, then go for inheritance.
+
+Suppose we have an Instructor class, which has erase method.
+
+Question, can Instructor inherit from Eraser?
+
+Answer: Will a user of Eraser want to use an instance of an Instructor as an instance of an Eraser?
+
+The instructor most likely want to use an erase instead
+of being used as an eraser.
+
+A bad example from Java JDK:
+
+In the JDK, class Stack<T> extends from Vector<T>.
+
+Is this a good inheritance?
+
+This is an example where they should have choosen
+delegation over inheritance. Why? By passing an instance
+of a Stack where a Vector is expected, we will vilated
+the invariants of a Stack. This is a poor design.
+
+Should have choosen delegation (for reuse) instead
+of inheritance (which allows substitutability that is
+not the design goal after all).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
