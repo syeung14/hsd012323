@@ -1,0 +1,27 @@
+Cohesion:
+code that does one thing and one thing really well
+narrow and focused
+
+it reduces the frequency of change
+minimizes the cost and effort of change over time
+
+We want high cohesion
+
+Like things are together and unlike things are apart
+
+Coupling:
+
+We want both low coupling and loose coupling
+
+Low (instead of high) - depends on fewer things
+Loose (instead of tight) - depends on things that are more stable (like interfaces)
+than things that are less stable (like classes)
+
+In any language we program in, we want to design for low coupling.
+
+Generally, statically typed languages demand more effort on our
+part to bring in loose coupling compared to dynamically typed
+languages that naturally favor loose coupling.
+
+
+
