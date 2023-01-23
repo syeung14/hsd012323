@@ -1,0 +1,61 @@
+What is extensibility?
+
+The code can do something that is reasonably different than it 
+already does, based on reasonable change in requirements,
+but with minimum change and effort to accommodate the
+new expectations.
+
+Extensibility is a slippery slope
+
+A piece of code can't be arbitrarily extensible 
+
+Never say "a code is extensible."
+
+Always say what is is extensible for.
+
+This code is extensible for... what it can specifically...
+
+For example, suppose we have a class Car which uses a piston engine.
+
+If we want the car to use a turboengine, we can argue it can be
+made extensible by making the car depend on an engine abstraction
+instead of directly on a piston engine.
+
+Car <>----> Engine
+
+Don't say Car is extensible. It is not.
+Don't say Car is extensible for using an Engine.
+
+What is it then?
+
+Car is extenisble to use different types of Engines that conform
+to the Engine abstraction.
+
+In the future if we want to use a different type of Engine
+that conforms to the Engine abstraction then we can accommodate that
+with the least amount of change to Car.
+
+But, if we want to have the car support multiple engines, may be
+a back up engine, then this code is not extensible for that change
+without making significant modifications.
+
+No code is extensible for arbitrarily changes
+
+For extensibility, the trick is to anticipate well.
+
+If we anticipate well, the design leads to extensibility.
+If we anticipate poorly, then the design leads to unnecessary complexity.
+
+We have to make sure that our anticipations are very realistic
+and highly probable. 
+
+What do we need to be able to anticipate well?
+
+We need both the domain knowledge and software development skill
+for this. Since most of us have one or the other, but not both,
+we have to collaborate as a team with this in mind explicitly.
+
+Do not turn to extensibility unless we can clearly justify it
+needs in each situation. When we bring in what we don't really 
+need, we have increased unnecessary complexity.
+
