@@ -1,0 +1,45 @@
+DRY
+
+Don't Repeat Yourself
+
+Every piece of knowledge should have a single, unambiguous, authoritative source of representation.
+
+Single source of truth
+
+It goes beyond duplication of code.
+
+Duplication of effort, not just duplication of code.
+
+If we do manual testing, that is a violation of DRY
+If we do manual deployment, that is a violation of DRY
+
+Duplication is *not* always a bad thing
+
+Consider and evaluation the trade offs
+
+For example, if we remove duplication we can improve reuse.
+But, it also increases coupling and decreases encapsulation.
+
+Should we focus on DRY or focus on reduce coupling?
+
+There are no clear answers to those questions.
+
+Context matters
+
+In monoliths, we want very high DRY, high reuse, we are OK
+with increasing coupling to achieve this. We don't have as 
+many boundaries to worry about coupling as much.
+
+In microservices, we want high encapsulation, low coupling,
+and autonomy of development. In order to place these qualities
+higher up, we are willing (or should be willing) to compromise on DRY.
+
+It really comes to trade offs.
+
+
+
+
+
+
+
+
