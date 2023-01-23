@@ -1,0 +1,51 @@
+Open Closed Principle (OCP):
+
+A software module must be open for extension but closed for modification - Bertrand Meyer
+
+It is more expensive to modify existing code that adding a new
+small piece of code.
+
+Abstraction and polymorphism are key to extensibility
+
+What is the most non-polymorphic keyword in languages like Java, C#, and C++:
+-new
+
+new is tight coupling
+
+new says that I want an instance of that particular type
+
+We have so many design patterns and libraries and frameworks
+just to deal with the evil powers of new
+
+abstract factory
+factory method
+prototype
+...
+Spring
+Guice
+...
+
+Not all languages have this issue. For example, Python has no new,
+Ruby has a new which is polymorphic.
+
+One example where OCP may be violated is when code uses instanceof
+
+Not all uses of instanceof are bad however.
+
+if (obj instanceof SomeClass)
+if (obj instanceof SomeotherClass)
+
+the above may be a violation of OCP. If we add another class
+we may have to change that code.
+
+But, 
+
+in the equals method
+
+if(other instanceof MyClass) { ...}
+The above may not be a violation of OCP. If we add other classes
+we don't normally change the equals method. So use of instanceof in equals is generally not a violation of OCP.
+
+We don't want change to ripple through the application code. We want to contain changes to regions of code so it is easier to change
+and is cost effective as well.
+
