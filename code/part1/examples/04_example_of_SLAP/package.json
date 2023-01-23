@@ -1,0 +1,14 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "npm install",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "plato": "plato -d report -r src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "plato": "^1.7.0"
+  }
+}
