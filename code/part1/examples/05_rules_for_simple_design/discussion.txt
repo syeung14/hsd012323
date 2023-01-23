@@ -1,0 +1,15 @@
+Kent Beck's 4 rules of simple design:
+-passes all the tests
+-reveals its intentions clearly
+-removes duplication
+-has fewest elements
+
+he places them in the order of diminimhing priority.
+
+These rules nicely strike a balance.
+
+If we create large functions we will have fewer functions, but
+they get hard to test. We will break them into smaller functions.
+But having too many smaller functions complicates the system
+as well, so we will strive for minimalism. There in lies the balance.
+
