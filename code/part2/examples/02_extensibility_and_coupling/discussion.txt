@@ -1,0 +1,21 @@
+Tight coupling often makes design hard to extend and also hard to
+test
+
+As much as possible, favor low and loose coupling to make
+design extensible and easier to test as well (assuming we need
+that extensibility).
+
+Fewer things to depend on lowers the frequency of change and
+lowers the fragility of a piece of code.
+
+The more abstract a code depends on the more stable it is.
+
+We should *not* use these ideas blindly and needs to evaluate
+on a case by case basis about the trade offs and give due
+considerations on what to apply and when to apply.
+
+Complexity is necessary when we want to gain the benefits.
+Complexity is unnecessary and should be avoided where there are no
+real benefits.
+
+
