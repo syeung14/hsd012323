@@ -1,0 +1,88 @@
+Single Responsibility Principle (SRP)
+
+The reason to change for a function or a class should be minimum
+
+SRP really is single reason to change principle
+
+SRP is cohesion stated differently
+
+How can we tell is a code follows SRP?
+
+What does the word "responsibility" really mean?
+
+Some people go the extreme to say a function should not take
+more than one parameter or it should not have any "if" statements,
+etc.
+
+Instead of going to the extreme, let us think about easy violations
+of SRP:
+
+Long functions
+
+Do you think writing long functions is a good idea?
+Yes/No - resounding No
+
+Have you recently seen long functions at work?
+Yes/no - resounding yes
+
+Cognitive dissonance
+
+Why is it a bad idea to write long functions?
+-hard to test
+-high coginitive load
+-hard to read and understand
+-hard to debug
+-hard to reuse
+-leads to duplication
+-hard to change
+-hard to reason
+-low cohesion and high coupling - opposites of a good design
+-...
+
+How big is big?
+10,000 lines in a function - oh, yes that is big
+1000 lines - yes
+100 lines - ???
+10 lines - Hum...
+
+We can't agree as an industry what big really is, the limit?
+
+Suppose we have a function
+f2c
+milesToKM
+k2c
+
+whereas each of these functions may be cohesive independent
+of each other, putting them in one utility class or a file may
+make it less cohesive.
+
+How do we apply SRP?
+
+We communicate in knowledge chunks and divide our conversations
+into different levels of details.
+
+A good function reads like a story and not like a puzzle.
+
+A good function focuses on a single level of detail or a single
+level of abstraction.
+
+Single Level of Abstraction Principle (SLAP)
+
+A long or a short function is not about the number of lines of code
+in it. It is about the number of levels of details or abstractions
+that is in the function.
+
+SLAP > SRP is a good focus
+
+It is not about chopping functions into smaller functions as this
+may actually lead to code that is harder to understand and
+maintain.
+
+Design may get complex if we do such arbitrary chopping of functions.
+
+A function should focus on one level of detail and delegate to
+lower level functions for lower level details.
+
+
+
+
