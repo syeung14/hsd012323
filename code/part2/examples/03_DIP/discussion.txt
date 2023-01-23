@@ -1,0 +1,37 @@
+Dependency Inversion Principle (DIP)
+
+A concrete class should not depend on another concrete class.
+Instead both should depend on an interface - please take this
+with a large grain of salt.
+
+This should not be followed blindly.
+
+Human ---> Clock
+
+what is the reason for this dependency?
+
+Suppose the human really needs an alarm and because a clock provides
+an alarm we have this dependency.
+
+Tight coupling in this case.
+
+*Suppose* we want to Human to use a different kind of an alarm,
+then the code is not extensible. If such a change is highly
+probable, then
+
+Human ---> Alarm where classes like Clock, TV, SmartWatch, SmartPhone, etc. implement the Alarm interface
+
+Dependency Inversion Principle also know as Inversion of Control (IOC)
+
+Human depends on Clock
+
+to
+
+Human depends on Alarm and Clock implements Alarm
+
+Human ----> Clock
+Human ----> Alarm <|---- Clock
+
+The direction of the dependency was inverted in this case: instead of the dependency going into the Clock, it now goes out of the Clock.
+
+
